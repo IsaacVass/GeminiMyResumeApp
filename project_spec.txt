@@ -1,0 +1,59 @@
+Resume App Project Requirements
+-Create a web app that will be deployed by github using html, javascript, and css that can act as a place to house all of my documents, links, and projects and I can upload more information and change the information so that I can keep it up to date.
+
+-The website should have a header on all pages with my name centered in bold then a list of links below that go across the screen that will have links to my linkedIn and my email. Below the links have a series of tabs across the screen that will allow navigation across the pages
+| About Me | Resume And Documents | Projects | Work Experience | Education |
+
+-About Me Page
+Title: About me
+Photo of me 
+Heading: Technical Skills and Operating Systems 
+Cards for each skill or operating system with a name, description, and rating out of 5 for proficiency that looks like
+{
+Name
+Underline
+Description
+Proficiency stars out of 5 allow half stars
+Comment
+}
+Button to add new skills
+Allow for filtering these cards and changing the order of them.
+
+
+-Resume And Documents Page
+Heading: Resume
+Display my Resume
+
+-Projects Page
+Heading: Projects
+Show a card for each project that contains the following information, order cards by date and have a section with featured projects
+{
+Name
+Underline
+Label
+Description
+Tech Stack
+Link to the project
+}
+Button to add new skills
+
+-Work Experience Page
+Heading: Work Experience
+Show a card for each project
+
+-Education Page
+Heading: California Baptist University
+SubHeading: Bachelor of Computer Science
+Description
+Link
+Unofficial Transcript
+Classes Cards
+{
+Name
+Label
+Semester
+Description
+}
+
+-Allow me to edit the values of all of these fields easily and change it and have the changes saved
+-Make commits after each major change.
