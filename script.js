@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Skill Data (example) - Define this here initially
     const skills = [
-        { name: "JavaScript", description: "A versatile programming language...", proficiency: 
-50 }, //Scale of 1-5
+        { name: "JavaScript", description: "A versatile programming language...", proficiency: 50 }, //Scale of 1-5
         { name: "HTML/CSS", description: "Foundation for web design.", proficiency: 40}
      ];
 
