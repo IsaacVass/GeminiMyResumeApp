@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Resume App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="header-name" contenteditable="true" onblur="saveHeaderData()">Your Name Here</h1>
+        <div class="header-links">
+            <a id="link-linkedin" href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a id="link-email" href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
+            <button class="edit-btn-sm" onclick="editHeaderLinks()"><i class="fas fa-edit"></i> Edit Links</button>
+        </div>
+    </header>
+
+    <nav class="tabs-container">
+        <button class="tab-btn active" onclick="switchTab('about')">About Me</button>
+        <button class="tab-btn" onclick="switchTab('resume')">Resume And Documents</button>
+        <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
+        <button class="tab-btn" onclick="switchTab('experience')">Work Experience</button>
+        <button class="tab-btn" onclick="switchTab('education')">Education</button>
+    </nav>
+
+    <main class="content-container">
+
+        <section id="about" class="tab-section active">
+            <h2>About Me</h2>
+            <div class="profile-container">
+                <div class="profile-photo-wrapper">
+                    <img id="profile-img" src="https://via.placeholder.com/150" alt="Profile Picture">
+                    <input type="file" id="photo-upload" accept="image/*" style="display:none" onchange="uploadPhoto(event)">
+                    <button class="edit-photo-btn" onclick="document.getElementById('photo-upload').click()"><i class="fas fa-camera"></i> Change Photo</button>
+                </div>
+                <div class="about-bio">
+                    <p id="about-text" contenteditable="true" onblur="saveBioData()">Click here to edit your bio. Share a brief summary of who you are, what drives you, and what you're currently working on!</p>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="skills-header">
+                <h3>Technical Skills and Operating Systems</h3>
+                <div class="skills-controls">
+                    <input type="text" id="skill-search" placeholder="Filter skills..." oninput="renderSkills()">
+                    <select id="skill-sort" onchange="renderSkills()">
+                        <option value="none">Sort by...</option>
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="rating-desc">Rating (High to Low)</option>
+                    </select>
+                    <button class="add-btn" onclick="openSkillModal()"><i class="fas fa-plus"></i> Add Skill</button>
+                </div>
+            </div>
+
+            <div id="skills-grid" class="cards-grid">
+                </div>
+        </section>
+
+        <section id="resume" class="tab-section">
+            <h2>Resume</h2>
+            <div class="resume-actions">
+                <label for="resume-upload" class="upload-label-btn"><i class="fas fa-upload"></i> Upload PDF Resume</label>
+                <input type="file" id="resume-upload" accept="application/pdf" style="display: none;" onchange="uploadResume(event)">
+            </div>
+            <div id="resume-viewer" class="resume-viewer-container">
+                <p class="placeholder-text">No resume uploaded yet. Click the button above to upload a PDF resume.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-section">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <button class="add-btn" onclick="openProjectModal()"><i class="fas fa-plus"></i> Add Project</button>
+            </div>
+
+            <h3 class="subsection-title"><i class="fas fa-star text-gold"></i> Featured Projects</h3>
+            <div id="featured-projects-grid" class="cards-grid">
+                </div>
+
+            <hr class="section-divider">
+
+            <h3 class="subsection-title">All Projects</h3>
+            <div id="all-projects-grid" class="cards-grid">
+                </div>
+        </section>
+
+        <section id="experience" class="tab-section">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <button class="add-btn" onclick="openExperienceModal()"><i class="fas fa-plus"></i> Add Experience</button>
+            </div>
+            <div id="experience-list" class="experience-list-container">
+                </div>
+        </section>
+
+        <section id="education" class="tab-section">
+            <div class="education-header">
+                <h2 id="edu-institution" contenteditable="true" onblur="saveEducationInfo()">California Baptist University</h2>
+                <h4 id="edu-degree" contenteditable="true" onblur="saveEducationInfo()">Bachelor of Computer Science</h4>
+                <p id="edu-description" contenteditable="true" onblur="saveEducationInfo()" class="edu-desc-text">Click to edit the institution description or background info here.</p>
+                <div class="edu-meta">
+                    <span id="edu-link" contenteditable="true" onblur="saveEducationInfo()">https://calbaptist.edu</span>
+                    <div class="transcript-wrapper">
+                        <label for="transcript-upload" class="upload-label-btn-sm"><i class="fas fa-file-pdf"></i> Upload Transcript</label>
+                        <input type="file" id="transcript-upload" accept="application/pdf" style="display: none;" onchange="uploadTranscript(event)">
+                        <a id="view-transcript-btn" href="#" target="_blank" style="display: none;" class="view-btn-sm"><i class="fas fa-eye"></i> View Transcript</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="classes-header">
+                <h3>Completed Courses</h3>
+                <button class="add-btn" onclick="openClassModal()"><i class="fas fa-plus"></i> Add Course</button>
+            </div>
+            <div id="classes-grid" class="cards-grid">
+                </div>
+        </section>
+
+    </main>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <h3 id="modal-title">Edit Item</h3>
+            <form id="modal-form" onsubmit="handleModalSubmit(event)">
+                <input type="hidden" id="form-item-id">
+                <input type="hidden" id="form-item-type">
+                
+                <div id="dynamic-form-fields">
+                    </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="cancel-btn" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="save-btn">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="links-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Edit Contact Links</h3>
+            <div class="form-group">
+                <label for="input-linkedin">LinkedIn URL</label>
+                <input type="url" id="input-linkedin" placeholder="https://linkedin.com/in/username">
+            </div>
+            <div class="form-group">
+                <label for="input-email">Email Address</label>
+                <input type="email" id="input-email" placeholder="example@email.com">
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="cancel-btn" onclick="closeLinksModal()">Cancel</button>
+                <button type="button" class="save-btn" onclick="saveHeaderLinks()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
