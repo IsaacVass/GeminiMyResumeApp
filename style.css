@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#mainHeader {
+    background-color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+}
+
+.tabs {
+    margin: 20px 0;
+}
