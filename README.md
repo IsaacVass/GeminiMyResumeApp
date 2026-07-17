@@ -3,4 +3,6 @@
 I am slowly putting in all of my information, so far the up to date sections are
 -- the header and its link
 
+!!All of the other fields and information on the site is filler!!
+
 This website was created by Gemini 3.5 Thinking Model with my guidance using the project_spec.txt which I wrote without AI as an guide.
