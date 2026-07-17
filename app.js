@@ -4,9 +4,10 @@
 // =========================================================================
 const portfolioData = {
     header: {
-        name: "Your Name Here",
-        linkedin: "https://linkedin.com/in/yourprofile",
-        email: "your.email@example.com",
+        name: "Isaac Vass",
+        linkedin: "https://www.linkedin.com/in/isaac-vass/",
+        github: "https://github.com/IsaacVass",
+        email: "isaacjosephvass@gmail.com",
         bio: "Passionate Computer Science student at California Baptist University. Interested in web development, backend architectures, and secure software development.",
         
         // Place your media files inside your GitHub root directory and path them here
@@ -99,6 +100,7 @@ function renderHeaderAndStatic() {
     
     // Links
     document.getElementById('link-linkedin').href = portfolioData.header.linkedin;
+    document.getElementById('link-github').href = portfolioData.header.github;
     document.getElementById('link-email').href = `mailto:${portfolioData.header.email}`;
 
     // Education Information
