@@ -172,7 +172,7 @@ h3 {
     padding: 0.5rem;
 }
 
-/* Control Headers */
+/* Controls Header */
 .skills-header, .section-header, .classes-header {
     display: flex;
     justify-content: space-between;

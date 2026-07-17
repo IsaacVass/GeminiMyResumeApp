@@ -1,20 +1,18 @@
 // =========================================================================
 //  PORTFOLIO DATA CONFIGURATION
-//  Edit these values directly to update your portfolio website!
+//  Edit this JSON structure to instantly update your hosted resume!
 // =========================================================================
 const portfolioData = {
     header: {
-        name: "Isaac Joseph Vass",
-        linkedin: "www.linkedin.com/in/isaac-vass",
+        name: "Your Name Here",
+        linkedin: "https://linkedin.com/in/yourprofile",
         email: "your.email@example.com",
-        github: "https://github.com/IsaacVass",
         bio: "Passionate Computer Science student at California Baptist University. Interested in web development, backend architectures, and secure software development.",
         
-        // Place your image and PDF files inside your GitHub repository, 
-        // then link them here using their relative file names.
-        photo: "profile.jpg",               // e.g., "profile.jpg" or a web url
-        resumePdf: "resume.pdf",            // e.g., "resume.pdf"
-        transcriptPdf: "transcript.pdf"     // e.g., "transcript.pdf"
+        // Place your media files inside your GitHub root directory and path them here
+        photo: "profile.jpg",               // e.g. "profile.jpg" or an image url
+        resumePdf: "resume.pdf",            // e.g. "resume.pdf"
+        transcriptPdf: "transcript.pdf"     // e.g. "transcript.pdf"
     },
     education: {
         school: "California Baptist University",
@@ -77,7 +75,7 @@ const portfolioData = {
 
 
 // =========================================================================
-//  RENDERING ENGINE (No need to edit below this line)
+//  RENDERING ENGINE (No logic edits needed)
 // =========================================================================
 
 // 1. Tab Navigation Routing
@@ -101,7 +99,6 @@ function renderHeaderAndStatic() {
     
     // Links
     document.getElementById('link-linkedin').href = portfolioData.header.linkedin;
-    document.getElementById('link-github').href = `mailto:${portfolioData.header.github}`;
     document.getElementById('link-email').href = `mailto:${portfolioData.header.email}`;
 
     // Education Information
@@ -190,7 +187,6 @@ function renderProjects() {
     featuredGrid.innerHTML = '';
     allGrid.innerHTML = '';
 
-    // Sort: Newest Projects First (converts "YYYY-MM" to dates to compare)
     const sortedProjects = [...portfolioData.projects].sort((a, b) => new Date(b.date) - new Date(a.date));
 
     sortedProjects.forEach(proj => {
