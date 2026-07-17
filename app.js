@@ -25,13 +25,13 @@ const portfolioData = {
             { 
                 name: "EGR 227: Data Structures", 
                 label: "Major Requirement", 
-                semester: "Fall 2025", 
+                semester: "Fall 2024", 
                 desc: "Analyzed memory allocation architectures, recursive practices, complexity profiling (Big O), trees, hash structures, and classical sorting algorithms." 
             },
             { 
                 name: "EGR 222: Software Engineering", 
                 label: "Major Requirement", 
-                semester: "Spring 2025", 
+                semester: "Spring 2024", 
                 desc: "Practiced standard development lifecycles (SDLC) focusing on requirements gathering, user stories, systems analysis, and teamwork frameworks." 
             }
         ]
@@ -64,12 +64,20 @@ const portfolioData = {
     ],
     experience: [
         { 
-            name: "Academic Peer Tutor", 
-            date: "Sept 2025 - Present", 
+            name: "California Baptist University Artificial Intelligence Machine Learning Lab", 
+            date: "November 2023 - June 2025 September 2025 - Present", 
             label: "Part-Time", 
-            tech: "CBU Tutoring Center", 
-            desc: "Led weekly instruction sessions assisting students in mastering introductory programming standards, discrete math properties, and debugging steps.", 
+            tech: "Student Researcher", 
+            desc: "Developing solutions for the lab\’s clients generally working with other researchers with enterprise software programs and coding libraries.", 
             link: "https://calbaptist.edu" 
+        },
+        { 
+            name: "Naval Surface Warfare Center Corona", 
+            date: "June 2025 - August 2025", 
+            label: "Full-Time", 
+            tech: "NRIEP Intern", 
+            desc: "10 week internship program working with a team in a SCRUM framework to develop a software solution for a NISE project. Gained experience in software development, team collaboration, and project management.", 
+            link: "https://www.navalsteminterns.us/nreip/" 
         }
     ]
 };
