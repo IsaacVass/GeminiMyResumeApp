@@ -12,7 +12,7 @@ const portfolioData = {
         
         // Place your media files inside your GitHub root directory and path them here
         photo: "profile.jpg",               // e.g. "profile.jpg" or an image url
-        resumePdf: "resume.pdf",            // e.g. "resume.pdf"
+        resumePdf: "VassCurrentResume.pdf",            // e.g. "resume.pdf"
         transcriptPdf: "transcript.pdf"     // e.g. "transcript.pdf"
     },
     education: {
