@@ -11,7 +11,7 @@ const portfolioData = {
         bio: "Passionate Computer Science student at California Baptist University. Interested in web development, backend architectures, and secure software development.",
         
         // Place your media files inside your GitHub root directory and path them here
-        photo: "profile.jpg",               // e.g. "profile.jpg" or an image url
+        photo: "Selfie.jpeg",               // e.g. "profile.jpg" or an image url
         resumePdf: "VassCurrentResume.pdf",            // e.g. "resume.pdf"
         transcriptPdf: "transcript.pdf"     // e.g. "transcript.pdf"
     },
