@@ -49,7 +49,7 @@ const portfolioData = {
             featured: true, 
             label: "Group Project - Junior Design", 
             tech: "Flutter, GCP, GitHub, Source Tree", 
-            desc: "Designed and built an interactive system allowing users to step through sorting algorithm pipelines with graphical step-by-step tree logic.", 
+            desc: "Built a rapid prototype using the SCRUM framework of a web application that uses AI to review, create, and improve user\’s resumes. Used Flutter for the main code of the application as we were most familiar with it. Google Cloud Platform was used to store user information, provide authentication, monitor feature use, and call artificial intelligence. GitHub for source control with Source Tree to keep track of the team\'s commits.",
             link: "https://www.youtube.com/watch?v=k28Lc7Mi7Co" 
         },
         { 
@@ -58,7 +58,7 @@ const portfolioData = {
             featured: false, 
             label: "Group Project - Mobile App", 
             tech: "Flutter, GCP, GitHub", 
-            desc: "Constructed a scheduling portal backend optimized with custom algorithms to resolve course conflicts across curriculum tracks.", 
+            desc: "Worked with a partner to create a mobile app that uses AI to generate outfits for events. The app uses GitHub as source control, Firebase Auth for authentication, Google Cloud Storage for storing the images, Firestore for user preferences, Flutter Plugins for features, and Riverpod for state in Firebase.", 
             link: "https://www.youtube.com/watch?v=FFMMtQqk5EU" 
         },
     { 
@@ -67,7 +67,7 @@ const portfolioData = {
             featured: false, 
             label: "Group Project - Databases", 
             tech: "SQL, GitHub", 
-            desc: "Constructed a scheduling portal backend optimized with custom algorithms to resolve course conflicts across curriculum tracks."
+            desc: "Built a model of a restaurant using SQL tables to demonstrate user stories and triggers to obey business rules and assumptions. We showed the stories of customers on a waitlist getting assigned to tables where they can then place orders food off of a menu which the chefs will prepare and servers will finally bring the food to the right table and check out the customer at the end of the night."
         }
     ],
     experience: [
