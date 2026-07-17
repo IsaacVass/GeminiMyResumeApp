@@ -5,6 +5,7 @@ I am slowly putting in all of my information, so far the up to date sections are
 -- the link to the transcript
 -- the classes are accurate, but I will not put all of the classes that I have taken in that section
 -- work experience is up to date but not fully described
+-- projects are real but descriptions are not in and not all of my projects are in
 
 !!All of the other fields and information on the site is filler!!
 

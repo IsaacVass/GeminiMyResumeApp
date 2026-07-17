@@ -44,22 +44,30 @@ const portfolioData = {
     ],
     projects: [
         { 
-            name: "Algorithm Visualizer Engine", 
-            date: "2025-11", 
+            name: "AI Resume Web Application", 
+            date: "2026-05", 
             featured: true, 
-            label: "Academic Capstone", 
-            tech: "HTML5, CSS3, JavaScript", 
+            label: "Group Project - Junior Design", 
+            tech: "Flutter, GCP, GitHub, Source Tree", 
             desc: "Designed and built an interactive system allowing users to step through sorting algorithm pipelines with graphical step-by-step tree logic.", 
-            link: "https://github.com/yourprofile/project-repo" 
+            link: "https://www.youtube.com/watch?v=k28Lc7Mi7Co" 
         },
         { 
-            name: "Automated Student Scheduling Hub", 
-            date: "2026-04", 
+            name: "AI Fashion App", 
+            date: "2026-12", 
             featured: false, 
-            label: "Group Project", 
-            tech: "Node.js, Express, SQL", 
+            label: "Group Project - Mobile App", 
+            tech: "Flutter, GCP, GitHub", 
             desc: "Constructed a scheduling portal backend optimized with custom algorithms to resolve course conflicts across curriculum tracks.", 
-            link: "https://github.com/yourprofile/project-repo" 
+            link: "https://www.youtube.com/watch?v=FFMMtQqk5EU" 
+        },
+    { 
+            name: "SQL Database Restraunt Management System", 
+            date: "2026-12", 
+            featured: false, 
+            label: "Group Project - Databases", 
+            tech: "SQL, GitHub", 
+            desc: "Constructed a scheduling portal backend optimized with custom algorithms to resolve course conflicts across curriculum tracks."
         }
     ],
     experience: [
@@ -209,7 +217,7 @@ function renderProjects() {
             <p class="card-desc">${proj.desc}</p>
             <p class="card-tech-stack"><strong>Tech Stack:</strong> ${proj.tech}</p>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                ${proj.link ? `<a class="card-link" href="${proj.link}" target="_blank"><i class="fab fa-github"></i> View Project</a>` : '<span></span>'}
+                ${proj.link ? `<a class="card-link" href="${proj.link}" target="_blank"><i class="fab fa-youtube"></i> View Project</a>` : '<span></span>'}
                 <span class="card-comment" style="font-size:0.75rem">${proj.date}</span>
             </div>
         `;
