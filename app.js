@@ -23,15 +23,15 @@ const portfolioData = {
         
         classes: [
             { 
-                name: "CSC 212: Data Structures", 
-                label: "Core Major", 
+                name: "EGR 227: Data Structures", 
+                label: "Major Requirement", 
                 semester: "Fall 2025", 
                 desc: "Analyzed memory allocation architectures, recursive practices, complexity profiling (Big O), trees, hash structures, and classical sorting algorithms." 
             },
             { 
-                name: "CSC 313: Software Engineering", 
+                name: "EGR 222: Software Engineering", 
                 label: "Major Requirement", 
-                semester: "Spring 2026", 
+                semester: "Spring 2025", 
                 desc: "Practiced standard development lifecycles (SDLC) focusing on requirements gathering, user stories, systems analysis, and teamwork frameworks." 
             }
         ]
