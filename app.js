@@ -43,10 +43,8 @@ const portfolioData = {
         ]
     },
     skills: [
-        { name: "JavaScript", rating: 4.5, comment: "Daily use", desc: "Proficient in modern ES6 specifications, asynchronous programming, dynamic DOM operations, and data structures." },
-        { name: "Python", rating: 4.0, comment: "Scripting and AI", desc: "Utilized for data structures assignments, server automation scripting, API designs, and core software prototypes." },
-        { name: "CSS / Responsive Web Design", rating: 4.5, comment: "UI Layouts", desc: "Skilled in CSS Grid, Flexbox, responsive alignments, structural transitions, and professional framework styles." },
-        { name: "Linux Systems", rating: 3.5, comment: "Operating Systems", desc: "Experienced with Unix environments, bash terminal utilities, standard git setups, and workspace configurations." }
+        { name: "Python", rating: 4.0, comment: "Scripting", desc: "Utilized for data structures assignments, server automation scripting, API designs, and core software prototypes." },
+        { name: "GitHub", rating: 4.5, comment: "Source Control", desc: "Used GitHub for all for school, work, and personal coding projects through the desktop app, and SourceTree. Experienced in commiting code practices and merging code for team development scenarios" },
     ],
     projects: [
         { 
