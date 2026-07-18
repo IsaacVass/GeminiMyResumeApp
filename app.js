@@ -277,6 +277,15 @@ function renderClasses() {
     });
 }
 
+function renderFooter() {
+    const footerElement = document.getElementById('footer');
+    const githubLink = document.getElementById('link-github-page');
+    
+    if (githubLink && portfolioData?.header?.github) {
+        githubLink.href = portfolioData.header.github;
+    }
+}
+
 // ================= SYSTEM INITIALIZATION =================
 window.onload = function() {
     renderHeaderAndStatic();

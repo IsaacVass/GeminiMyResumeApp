@@ -381,6 +381,35 @@ input[type="text"], select {
     background-color: #1a252f;
 }
 
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: #666; /* Muted gray */
+    margin: 5px 0;
+}
+
+/* New styles for the footer link */
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    font-size: 0.9rem;
+    color: #0066cc; /* Gives it a classic blue link color, or change to #666 to match the text */
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    color: #004499; /* Slightly darker blue on hover */
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .profile-container {
