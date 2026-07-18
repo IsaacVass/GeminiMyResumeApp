@@ -23,6 +23,12 @@ const portfolioData = {
         
         classes: [
             { 
+                name: "EGR 302: Junior Design", 
+                label: "Major Requirement", 
+                semester: "Spring 2026", 
+                desc: "Developed an application with a team with strict timelines for deliverables under the SCRUM framework. Required Sprint planning and documentation of the project process as well as Sprint presentations and securing a mentorship to guide the team." 
+            },
+            { 
                 name: "EGR 227: Data Structures", 
                 label: "Major Requirement", 
                 semester: "Fall 2024", 
@@ -49,7 +55,7 @@ const portfolioData = {
             featured: true, 
             label: "Group Project - Junior Design", 
             tech: "Flutter, GCP, GitHub, Source Tree", 
-            desc: "Built a rapid prototype using the SCRUM framework of a web application that uses AI to review, create, and improve user\’s resumes. Used Flutter for the main code of the application as we were most familiar with it. Google Cloud Platform was used to store user information, provide authentication, monitor feature use, and call artificial intelligence. GitHub for source control with Source Tree to keep track of the team\'s commits.",
+            desc: "Built a rapid prototype using the SCRUM framework of a web application that uses AI to review, create, and improve user\’s resumes. Used Flutter for the main code of the application as we were most familiar with it. Google Cloud Platform was used to store user information, provide authentication, monitor feature use, and call artificial intelligence. GitHub for source control with Source Tree to keep track of the team\ 's commits. Additionally we met with a mentor at the end of Sprints to review our progress and guide us for implementing new features.",
             link: "https://www.youtube.com/watch?v=k28Lc7Mi7Co" 
         },
         { 
