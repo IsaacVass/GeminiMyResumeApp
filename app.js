@@ -45,6 +45,7 @@ const portfolioData = {
     skills: [
         { name: "Python", rating: 4.0, comment: "Scripting", desc: "Utilized for data structures assignments, server automation scripting, API designs, and core software prototypes." },
         { name: "GitHub", rating: 4.5, comment: "Source Control", desc: "Used GitHub for all for school, work, and personal coding projects through the desktop app, and SourceTree. Experienced in commiting code practices and merging code for team development scenarios" },
+        { name: "VS Code", rating: 5.0, comment: "IDE", desc: "VS Code is my go to IDE and I have made use of many of its extensions across my projects using many different coding languages and features" },
     ],
     projects: [
         { 
