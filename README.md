@@ -1,13 +1,3 @@
-!!!!!This website is a work in progress, some of the information is filler or not up to date.!!!!! 
-
-The up to date sections are
--- the header and its link
--- the link to the transcript
--- the displayed classes are accurate
--- work experience is up to date but not fully described
--- projects are real, but not all of my projects are in
-
-Right now Technical Skills and Operating Systems is filler information
-
-
 This website was created by Gemini 3.5 Thinking Model with my guidance using the project_spec.txt which I wrote without AI as an guide.
+
+Although it was generated with AI and contained only filler information originally, its content now reflects my experiences and abilities jut not fully fleshed out yet.
