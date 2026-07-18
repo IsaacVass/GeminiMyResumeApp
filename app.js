@@ -92,7 +92,10 @@ const portfolioData = {
             desc: "10 week internship program working with a team in a SCRUM framework to develop a software solution for a NISE project. Gained experience in software development, team collaboration, and project management.", 
             link: "https://www.navalsteminterns.us/nreip/" 
         }
-    ]
+    ],
+    footer:{
+        github: "https://github.com/IsaacVass/GeminiMyResumeApp",
+    }
 };
 
 
@@ -277,13 +280,10 @@ function renderClasses() {
     });
 }
 
+// 8. Render Footer with GitHub Link to the Repo
 function renderFooter() {
     const footerElement = document.getElementById('footer');
-    const githubLink = document.getElementById('link-github-page');
-    
-    if (githubLink && portfolioData?.header?.github) {
-        githubLink.href = portfolioData.header.github;
-    }
+    document.getElementById('link-github-page').href = portfolioData.footer.github;
 }
 
 // ================= SYSTEM INITIALIZATION =================
@@ -293,4 +293,5 @@ window.onload = function() {
     renderProjects();
     renderExperiences();
     renderClasses();
+    renderFooter();
 };
