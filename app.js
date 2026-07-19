@@ -280,11 +280,11 @@ function renderClasses() {
     });
 }
 
-// 8. Render Footer with GitHub Link to the Repo
-function renderFooter() {
-    const footerElement = document.getElementById('footer');
-    document.getElementById('link-github-page').href = portfolioData.footer.github;
-}
+// // 8. Render Footer with GitHub Link to the Repo
+// function renderFooter() {
+//     const footerElement = document.getElementById('footer');
+//     document.getElementById('link-github-page').href = portfolioData.footer.github;
+// }
 
 // ================= SYSTEM INITIALIZATION =================
 window.onload = function() {
