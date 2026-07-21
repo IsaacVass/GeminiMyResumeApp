@@ -43,9 +43,9 @@ const portfolioData = {
         ]
     },
     skills: [
-        { name: "Python", rating: 4.0, comment: "Scripting", desc: "Utilized for coding projects for work and a couple classes familiar with many libraries and the syntax; however, I prefer having strongly typed variables." },
-        { name: "GitHub", rating: 4.5, comment: "Source Control", desc: "Used GitHub for all for school, work, and personal coding projects through the desktop app and SourceTree. Experienced in committing code practices and merging code for team development scenarios" },
-        { name: "VS Code", rating: 5.0, comment: "IDE", desc: "VS Code is my go-to IDE and I have made use of many of its extensions across my projects using many different coding languages and features" },
+        { name: "Python", rating: 4.0, comment: "Scripting", desc: "Utilized for coding projects for work and a couple classes familiar with many libraries and the syntax." },
+        { name: "GitHub", rating: 4.5, comment: "Source Control", desc: "Used GitHub for all school, work, and personal coding projects through the desktop app and SourceTree. Experienced in committing code practices and merging code for team development scenarios" },
+        { name: "VS Code", rating: 5.0, comment: "IDE", desc: "VS Code is my go-to IDE and I have made use of many of its extensions across my projects using different coding languages and features" },
     ],
     projects: [
         { 
@@ -72,7 +72,7 @@ const portfolioData = {
             featured: false, 
             label: "Group Project - Databases", 
             tech: "SQL, GitHub", 
-            desc: "Built a model of a restaurant using SQL tables to demonstrate user stories and triggers to obey business rules and assumptions. We showed the stories of customers on a waitlist getting assigned to tables where they can then place orders food off of a menu which the chefs will prepare and servers will finally bring the food to the right table and check out the customer at the end of the night."
+            desc: "Built a model of a restaurant using SQL tables to demonstrate user stories and created triggers so it would obey business rules and assumptions. We showed the stories of customers on a waitlist getting assigned to tables where they can then place orders food off of a menu which the chefs will prepare and servers will finally bring the food to the right table and check out the customer at the end of the night."
         }
     ],
     experience: [
